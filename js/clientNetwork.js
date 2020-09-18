@@ -38,6 +38,7 @@ export default class ClientNetwork{
       }
       else camera_position = {x: -20, y:7, z:0};
       restart_ball = true;
+      start_match = true;
     });
 
     this._socket.on('stop_match', function(){

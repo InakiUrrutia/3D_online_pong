@@ -120,6 +120,10 @@ function gameLoop() {
 
 function update(step) {
 
+  if(start_match){
+    startMatch();
+    start_match = false;
+  }
   if(game_ready){
     if(collisionP1(ball.object, p1.object)){
       ball_speed = -ball_speed;
