@@ -44,6 +44,7 @@ export default class ClientNetwork{
     this._socket.on('stop_match', function(){
       camera_position = {x: 0, y:6, z:-18};
       game_ready = false;
+      restart_ball = false;
     });
 
     this._socket.on('update_p1_position', function(data){
