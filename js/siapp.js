@@ -121,6 +121,7 @@ function gameLoop() {
 function update(step) {
 
   if(start_match){
+    camera.position.set(camera_position.x, camera_position.y, camera_position.z);
     startMatch();
     start_match = false;
   }
@@ -143,7 +144,6 @@ function update(step) {
     score();
   }
   if(restart_ball){
-    camera.position.set(camera_position.x, camera_position.y, camera_position.z);
     resetBall();
     game_ready = true;
   }
@@ -165,6 +165,7 @@ function timestamp() {
 function startMatch(){
   resetBall();
   ball_speed = 0.05;
+  game_ready = true;
 }
 
 function resetBall(){
