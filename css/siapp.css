@@ -1,0 +1,48 @@
+html,body {
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #555;
+}
+#SIApp{
+  width: 100%;
+  height: 100%;
+}
+canvas{
+  width: 100%;
+  height: 100%;
+}
+#SIApp{
+  background-color: #555;
+}
+#pseudo1{
+  color: blue;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+#pseudo2{
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#btnRight, #btnLeft{
+  color: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:85%;
+  display: none;
+  text-align: center;
+}
+#btnRight{
+  right:10%;
+}
+#btnLeft{
+  left:10%;
+}
+.fas{
+  transform: scale(4,4);
+}
